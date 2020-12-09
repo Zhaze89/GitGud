@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- and include jQuery and Bootstrap -->
+  <script src="/jquery/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+
+  <!-- load your JS file's after (= defer) the DOM is loaded  -->
+  <script src="js/main.js" defer></script>
+  <%- include('../partials/header') %>
+</head>
+
+<body>
+
+  
+  <div class="container-fluid" id="contact">
+   
+    <div class="col-3 offset-4">
+      <h2>Neem contact met ons op:</h2>
+
+      <form action="">
+
+    <div class="mb-2">
+        <label for="fname" class="form-label" for="fname">Voornaam</label>
+        <input type="text" id="fname" name="firstname" class="form-control" placeholder="Voornaam">
+    </div>
+
+    <div class="mb-2">
+      <label for="lname" class="form-label" for="lname">Achternaam</label>
+      <input type="text" id="lname" name="lastname" class="form-control" placeholder="Achternaam">
+    </div>
+
+    <div class="mb-2">
+      <label for="email" class="form-label" for="email">E-mail</label>
+      <input type="text" id="email" name="email" class="form-control" placeholder="E-mail Adres">
+    </div>
+
+
+    <div class="mb-2">
+      <label for="tel" class="form-label" for="tel">Telefoon</label>
+      <input type="text" id="tel" name="tel" class="form-control" placeholder="Telefoonnummer">
+    </div>
+
+    <div class="mb-2">
+      <label for="provincie" class="form-label" for="provincie">Provincie</label>
+      <select id="provincie" name="provincie" class="form-control">
+        <option value="groningen">Groningen</option>
+        <option value="friesland">Friesland</option>
+        <option value="overijssel">Overijssel</option>
+        <option value="flevoland">Flevoland</option>
+        <option value="gelderland">Gelderland</option>
+        <option value="utrecht">Utrecht</option>
+        <option value="noordholland">Noord-Holland</option>
+        <option value="zuidholland">Zuid-Holland</option>
+        <option value="zeeland">Zeeland</option>
+        <option value="noordbrabant">Noord-Brabant</option>
+        <option value="limburg">Limburg</option>
+      </select>
+    </div>
+
+    <div class="mb-2">
+      <label for="subject" class="form-label" for="subject">Subject</label>
+      <textarea id="subject" name="subject" class="form-control" placeholder="" style="height:200px"></textarea>
+    </div>
+    <button type="button" class="btn btn-success btn-block">Inschrijven</button>
+
+    </form>
+  </div>
+  </div>
+
+</body>
+<footer>
+  <%- include('../partials/footer') %>
+</footer>
+
+
+</html>

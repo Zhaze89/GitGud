@@ -1,0 +1,46 @@
+        <!-- here's the syntax for including CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+        <!-- always load your own CSS file after the Booststrap CSS file -->
+        <!-- so you can override Bootstrap CSS when needed  -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- and include jQuery and Bootstrap -->
+        <script src="/jquery/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+        <!-- load your JS file's after (= defer) the DOM is loaded  -->
+        <script src="js/main.js" defer></script>
+
+
+        <%- include('../partials/header') %>
+        <%- include('../partials/content') %>
+      <div class="row">
+        <div class="col-md-2">
+            <div class="btns">
+                <button type="button" class="btn btn-success btn-block">Inschrijven</button>
+                <button type="button" class="btn btn-primary btn-block">Proefles</button>
+                <button type="button" class="btn btn-secondary btn-block">Studiegids</button>
+                <button type="button" class="btn btn-warning btn-block">Adviesgesprek</button>
+                </div>
+           
+        </div>
+        <div class="col-md-9 textlap">
+        <h2>Natuur Gids</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat voluptas consequatur velit totam, quisquam, inventore quae facere accusantium vitae possimus. Numquam, laudantium praesentium nihil maiores minima explicabo distinctio iusto?
+        Quidem totam cum, amet dolor expedita illum dolore ex ipsum explicabo quae vero repellendus voluptate qui possimus magnam magni iste animi mollitia sit. Asperiores, quidem aliquid consequatur dolores quae quibusdam.
+        Totam, magni possimus porro provident, ipsam esse maxime recusandae quasi, cumque quaerat ipsa eos qui sapiente reiciendis eius? Eius repellat animi quasi explicabo assumenda architecto provident, aliquid beatae voluptate? Harum.
+        Qui atque delectus quaerat cupiditate tempore eius quos ut ipsa, dolorum tenetur facere eum ex incidunt nesciunt? Minus, blanditiis? Dolore, officia debitis quam inventore veritatis fuga voluptatem! Aperiam, nesciunt adipisci.
+        Ullam atque sunt ab deserunt maiores esse, minus sequi impedit quaerat! Ab quaerat beatae quasi. Rerum dolorum voluptatibus itaque sed officia corporis natus ab illum qui odio ipsum, eligendi eum?<</p>/p>
+        
+        <img src="https://i0.wp.com/www.nanpa.org/wp-content/uploads/2019/04/ethic-committee-web-620x413.png?resize=620%2C413&ssl=1">
+        <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/8/2019/05/HR-Sylvan-14-620x413.jpg">
+        <img src="https://b50ym1n8ryw31pmkr4671ui1c64-wpengine.netdna-ssl.com/wp-content/blogs.dir/11/files/2014/06/DoNotUse-Judd_Patterson-417510-620x413.jpg">
+    </div>
+      </div>
+
+      <footer>
+        <%- include('../partials/footer') %>
+      </footer>

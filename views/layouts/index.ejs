@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Git Gud</title>
+
+        <!-- here's the syntax for including CSS -->
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+
+        <!-- always load your own CSS file after the Booststrap CSS file -->
+        <!-- so you can override Bootstrap CSS when needed  -->
+        <link rel="stylesheet" href="css/main.css" />
+
+        <!-- and include jQuery and Bootstrap -->
+        <script src="/jquery/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+
+        <!-- load your JS file's after (= defer) the DOM is loaded  -->
+        <script src="js/main.js" defer></script>
+        
+    </head>
+
+    <body>
+        <main>
+            <header>
+            <%- include('../partials/header') %>
+        </header>
+            <section class="content">
+                <!-- did you pass your variables? -->
+                
+                <%- include('../partials/content') %>
+                <%- include('../partials/modal') %>
+                <%- include('../partials/carousel') %>
+              
+    
+            
+            </section>
+            <div id='space'>
+                <div id="mauw">
+                <h2>For cursists, by cursists</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate placeat voluptas consequatur velit totam, quisquam, inventore quae facere accusantium vitae possimus. Numquam, laudantium praesentium nihil maiores minima explicabo distinctio iusto?
+                    Quidem totam cum, amet dolor expedita illum dolore ex ipsum explicabo quae vero repellendus voluptate qui possimus magnam magni iste animi mollitia sit. Asperiores, quidem aliquid consequatur dolores quae quibusdam.
+                    Totam, magni possimus porro provident, ipsam esse maxime recusandae quasi, cumque quaerat ipsa eos qui sapiente reiciendis eius? Eius repellat animi quasi explicabo assumenda architecto provident, aliquid beatae voluptate? Harum.</p>
+                </div>
+            </div>
+     
+        </main>
+    </body>
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+</html>

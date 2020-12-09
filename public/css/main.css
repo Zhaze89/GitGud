@@ -1,0 +1,419 @@
+/*
+    this CSS file import 2 Google fonts: Assistant and Nunito
+    goto https://fonts.google.com to select any font you like
+
+    edit anything you like to this CSS file
+    remember: this is just a @basic skeleton :-)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.1em;
+    font-weight: 200;
+    padding-top: 80px;
+}
+
+.textlap {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    border: 3px solid grey;
+    padding: 20px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.btns {
+    margin-left: 30px;
+}
+
+img {
+    max-width: 350px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.navbar {
+    width: 100%;
+    height: 75px;
+    background-color: #a0ced9;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.navbar-nav a{
+    padding: 0;
+    font-weight: 600;
+    
+}
+
+header {
+    width: 100%;
+  
+}
+
+h1 {
+font-size: 80px;
+line-height: 60px;
+}
+
+
+
+.submit {
+    background-color: grey;
+}
+
+.content {
+    font-size: 1em; /* whatever goes here */
+    min-height: 300px;
+}
+
+
+
+.kut-div{
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.carousel-inner{
+    position: relative;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.carousel-item {
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+
+}
+
+.carousel-button {
+    position: relative;
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 10%;
+    background-size: cover;
+    background-position: start;
+    margin: 20px ;
+    filter: brightness(0.8) contrast(1);
+    transition: 0.4s;
+}
+
+.carousel-caption {
+    color: white;
+    font-weight: 800;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Coda Caption', sans-serif;
+    line-height: 1;
+    transition: 0.4s;
+}
+
+
+
+
+.carousel-button:hover{
+    transform: translateY(-5px) scale(1);
+    filter: brightness(0.6) contrast(1);;
+    cursor: pointer;
+}
+.carousel-button:hover + .carousel-caption {
+    transform: translateY(-5px) scale(1);
+    cursor: pointer;
+}
+.carousel-caption:hover + .carousel-button {
+    transform: translateY(-5px) scale(1);
+    filter: brightness(0.6) contrast(1);;
+    cursor: pointer;
+}
+.carousel-caption:hover{
+    transform: translateY(-5px) scale(1);
+    cursor: pointer;
+}
+
+
+
+#agrarisch_werk{
+background-image: url( '/images/agrarisch_werk.jpg' );
+}
+#food_expert{
+background-image: url( '/images/food_expert.jpg' );
+}
+#business{
+background-image: url( '/images/business.jpg' );
+}
+#it_master{
+background-image: url( '/images/it_master.jpg' );
+}
+#logistics{
+background-image: url( '/images/logistics.jpg' );
+}
+#natuur_gids{
+background-image: url( '/images/natuur_gids.jpg' );
+}
+#sport_coach{
+background-image: url( '/images/sport_coach.jpg' );
+}
+
+@media (min-width: 576px) {
+    
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 991px) {
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%; 
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+
+.img-fluid {
+    min-height: 450px;
+    max-height: 450px;
+    min-width: 350px;
+    max-width: 350px;
+    border-radius: 10%;
+    background-position: contain;
+}
+
+#space {
+    text-align: center;
+    padding-top: 35px;
+    
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 75px;
+    color: #a0ced9;
+    background-color: #a0ced9;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    bottom: 0px;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+
+
+
+/* @media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 991px) {
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%; 
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+} */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10%;
+    float: right;
+  }
+
+  /* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
